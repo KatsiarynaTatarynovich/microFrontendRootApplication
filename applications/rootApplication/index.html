@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>React Webpack Single-spa App</title>
+</head>
+
+<body>
+  <script src="http://localhost:9001/applicationOne.js"></script>
+  <script src="http://localhost:9002/applicationTwo.js"></script>
+
+  <style>
+    .navbar {
+      background-color: #111D4A;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      width: 100%;
+      height: 75px;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar ul {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      height: 100%;
+    }
+
+    .navbar li {
+      padding-right: 24px;
+    }
+
+    .navbar li:hover {
+      opacity: 0.8;
+    }
+
+    .navbar a {
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+
+  <div class="navbar">
+    <ul>
+      <li>
+        <a onclick="singleSpaNavigate('/applicationOne')">
+            Application one
+        </a>
+      </li>
+      <li>
+        <a onclick="singleSpaNavigate('/applicationTwo')">
+            Application two
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="single-spa-application:application-one"></div>
+  <div id="single-spa-application:application-two"></div>
+</body>
+
+</html>
