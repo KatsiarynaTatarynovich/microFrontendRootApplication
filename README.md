@@ -4,4 +4,5 @@
  
 # Start application
 npm run start
+
 cd application-three && npm run start
