@@ -3,6 +3,6 @@
  
  
 # Start application
-npm run start
+cd root-app && npm run start
 
 cd application-three && npm run start
